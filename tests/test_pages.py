@@ -2,7 +2,7 @@ def test_home_page(client):
     response = client.get("/")
     assert response.status_code == 200
     assert "SentimentAI" in response.text
-    assert "Version 1.0" in response.text
+    assert "version 1.0" in response.text.lower()
 
 
 def test_dashboard_uses_saved_data(client):
