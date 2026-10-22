@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6fb"><title>{% block title %}SentimentAI{% endblock %} · SentimentAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css"><script src="/static/js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="/" aria-label="SentimentAI, accueil"><span class="brand-mark">s<span>·</span></span><span>sentiment<span class="brand-ai">ai</span></span></a>
+  <nav class="main-nav" aria-label="Navigation principale"><a href="/dashboard">Tableau de bord</a><a href="/history">Historique</a></nav>
+  <a class="button button-small" href="/texts/new">+ Nouveau texte</a>
+</header>
+<main>{% block content %}{% endblock %}</main>
+<footer class="site-footer"><a class="brand footer-brand" href="/"><span class="brand-mark">s<span>·</span></span><span>sentiment<span class="brand-ai">ai</span></span></a><span>Une base solide pour mieux comprendre les textes.</span><span class="version">VERSION 1.0</span></footer>
+</body></html>
